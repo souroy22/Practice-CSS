@@ -1,0 +1,62 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.skill
+{
+    display: flex;
+   justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+
+}
+.skill a
+{
+    text-decoration: none;
+}
+
+header
+{  
+    font-size: 40px;
+    font-weight: bolder;
+   display: flex;
+   padding-left: 20px;
+   color: rgb(68, 0, 255);
+   
+    
+}
+.names
+{  
+    display:  flex;
+    height: 50vh;
+    width: 80vh;
+    padding: 10px;
+    border: 1px solid black;
+}
+.outer
+{
+    height: 15%;
+    width: 40%;
+    display:  flex;
+    position: relative;
+    border: 1px solid red;
+    background-color: gray;
+    
+    margin: 10px;
+}
+.inner
+{
+    height:100%;
+    width: 75%;
+     display: flex;
+     position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 40%;
+    font-size: 30px;
+}
+

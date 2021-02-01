@@ -1,0 +1,185 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.bg {
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+    url(/food\ sac.jpeg);
+  background-size: cover;
+}
+.nav-bar {
+  height: 100px;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-bar li {
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  font-size: 20px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.my-img img {
+  height: 90px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid rgb(236, 225, 225, 0.3);
+  box-shadow: 2px;
+}
+.my-img img:hover {
+  box-shadow: 0px 0px 6px 4px white;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: rgb(236, 201, 42);
+  font-weight: bolder;
+  transition: transform 0.3s ease-in;
+}
+.nav-bar a:hover {
+  border-bottom: 1px solid white;
+  color: red;
+}
+.nav-bar li:hover {
+  transform: scale(1.2);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.my-img {
+  display: flex;
+}
+
+.text {
+  width: 500px;
+  /* margin-left: 150px */
+  margin: 0 auto;
+  margin-top: -300px;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+}
+#welcome {
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+  padding-bottom: 10px;
+}
+#p {
+  padding-bottom: 20px;
+  font-weight: 400px;
+  color: rgb(240, 115, 42);
+}
+button {
+  font-size: 40px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px;
+}
+button:hover {
+  box-shadow: 0px 0px 6px 6px rgba(221, 216, 216, 0.5);
+  color: blueviolet;
+}
+
+/*  Class */
+.services {
+  margin-top: 80px;
+
+  width: 96%;
+
+  padding: 10px;
+  border: 5px solid black;
+}
+.services h1 {
+  height: 50px;
+  color: black;
+  border: 1px solid red;
+  width: 200px;
+  font-weight: bolder;
+  margin: 0 auto;
+}
+.classes {
+  display: flex;
+
+  border: 2px solid rgb(34, 52, 218);
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+.box {
+  height: 250px;
+  width: 30%;
+  margin-bottom: 15px;
+  border: 1px solid red;
+  position: relative;
+}
+.box ::after{
+
+}
+.box img {
+  width: 100%;
+  height: 100%;
+}
+.description
+{
+  position: absolute;
+  left:0;
+  top: -120px;
+
+}
+.box:hover {
+  /* background-color: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)); */
+
+
+  /* opacity: rgb(0, 0, 0, 0.5); */
+  opacity: 0.3; 
+  visibility: visible;
+  /* background: rgb(0, 0, 0, 0.7); */
+  
+}
+
+
+/* clients  */
+
+.clients
+{  
+  margin-top:200px;
+   height: 75%;
+   width: 98%;
+   border:1px solid black;
+}
+.clients h1
+{
+   text-align: center;
+   color: blueviolet;
+   font-weight: bolder;
+}
+
+.icons
+{
+ padding-left:10px;
+ display: flex;
+ justify-content: space-around;
+ font-size:40px;
+}
+.icons a
+{
+  color:black;
+}
+.icons :hover
+{
+  transform: scale(1.3);
+}

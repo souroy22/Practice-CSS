@@ -1,0 +1,148 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  height: 80px;
+  background-color: cyan;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 40px;
+}
+.right-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+}
+.right-section ul li {
+  text-decoration: none;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: transform 0.3s ease-in;
+}
+a {
+  text-decoration: none;
+}
+.right-section ul li:hover {
+  /* border-bottom: 1px solid black;
+    font-size:30px; 
+   transform: scale(1.2); */
+  transform: scale(1.2);
+  /* font-size:30px; */
+  border-bottom: 1px solid red;
+}
+.search {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  font-size: 20px;
+  color: red;
+  border-style: none;
+  margin-right: 10px;
+}
+input:focus {
+  outline-style: none;
+}
+button {
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  border-radius: 25%;
+  transition: all;
+}
+button:hover {
+  box-shadow: 0px 0px 6px 2px gray;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+/* Menu Bar */
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  background-color: black;
+  color: white;
+  position: relative;
+  display: none;
+  visibility: hidden;
+}
+.menu p {
+  position: absolute;
+  font-size: 30px;
+  margin-top: -6px;
+  padding-left: 130px;
+  color: red;
+}
+
+.menu ul {
+  list-style: none;
+
+  font-size: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.menu ul li a {
+  color: white;
+}
+.menu {
+  font-weight: bolder;
+  transition: transform 0.4s ease-in;
+}
+.menu ul :hover {
+  transform: scale(1.2);
+  border-bottom: 1px solid red;
+}
+
+#icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: hidden;
+  transition: all 2s ease-in-out;
+}
+#men:target {
+  display: flex;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  background-color: black;
+  visibility: visible;
+}
+
+#icon {
+  display: none;
+}
+.menu {
+  display: none;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 1100px) {
+  .right-section {
+    display: none;
+  }
+  #icon {
+    display: flex;
+  }
+  .menu {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .menu {
+    display: none;
+    visibility: hidden;
+  }
+}
